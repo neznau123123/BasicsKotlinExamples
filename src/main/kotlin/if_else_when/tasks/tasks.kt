@@ -78,7 +78,26 @@ Task8: Калькулятор простых операций
 Выполни указанную операцию и выведи результат.
 */
 fun task8() {
+    val num1 = readLine()!!.toInt()
+    val num2 = readLine()!!.toInt()
 
+    val operation = readLine()
+
+    if (operation == "+"){
+        println(num1 + num2)
+    }
+
+    if (operation == "-"){
+        println(num1 - num2)
+    }
+
+    if (operation == "*"){
+        println(num1 * num2)
+    }
+
+    if (operation == "/"){
+        println(num1 / num2)
+    }
 }
 
 /*
@@ -88,7 +107,19 @@ Task9: Определение високосного года
 Определи, является ли этот год високосным, и выведи результат.
 */
 fun task9() {
+    val year1 = readLine()!!.toInt()
+    val listyear = listOf<Int>(2032, 2028, 2024, 2020, 2016, 2012, 2008, 2004, 2000, 1996, 1992, 1988, 1984, 1980, 1976, 1972, 1968, 1964, 1960, 1956, 1952, 1948, 1944, 1940, 1936, 1932, 1928, 1924, 1920, 1916, 1912, 1908, 1904)
+    val index = listyear.indexOf(year1)
 
+    if(year1 % 4 == 0 && year1 % 100 == 0 && year1 % 400 == 0){
+
+    }
+
+    if (index > 0){
+        println("ваш год високосный")
+    } else{
+        println("ваш год не високосный")
+    }
 }
 
 /*
