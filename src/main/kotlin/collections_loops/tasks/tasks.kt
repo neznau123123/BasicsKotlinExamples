@@ -1,6 +1,7 @@
 package collections_loops.tasks
 
 import kotlin.random.Random
+import kotlin.random.nextInt
 
 fun main(){
 
@@ -12,6 +13,9 @@ Task1: Сумма элементов списка
 Задание: Создай список из пяти чисел. Вычисли и выведи сумму всех элементов списка.
 */
 fun task1() {
+    val numbers = listOf(1, 2, 3, 4, 5)
+    val sum = numbers.sum()
+    println("Сумма всех элементов списка: $sum")
 }
 
 /*
@@ -20,7 +24,11 @@ Task2: Поиск максимального числа в списке
 Задание: Создай список из десяти случайных чисел от 1 до 100. Найди и выведи на экран максимальное число из списка.
 */
 fun task2() {
-
+    val numbers = List(10)
+    { Random.nextInt(1..100) }
+    val maxNumber = numbers.maxOrNull()
+    println(" $numbers")
+    println(" $maxNumber")
 }
 
 /*
